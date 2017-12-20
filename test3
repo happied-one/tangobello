@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-python3 -c 'import pytest_env' && pytest tests -s
-if [ $? -ne 0 ]; then
-    exit
-fi
-
-pytest --pep8 -q
-pytest --flakes -q
